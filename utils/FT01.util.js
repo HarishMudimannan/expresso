@@ -24,6 +24,8 @@ class FT {
             await login.pwdTF.fill(y.pwd)
             await login.loginBtn.click()
             expect(await login.errormsg.textContent()).toBe('Login was unsuccessful. Please correct the errors and try again.') ?? console.log("Login Failed - Asertion Success")
+            console.log("check the git conflict");
+            
             // await logout.logoutHelper(page)
             // await logout.login(page)
         }
